@@ -1,0 +1,6 @@
+/* Header
+---------------------------------------- */
+.line {
+	height:5px;
+	@include linear-gradient (#ff5e3a, #ff9500);
+}

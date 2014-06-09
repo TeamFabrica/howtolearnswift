@@ -1,0 +1,95 @@
+/* Footer
+---------------------------------------- */
+footer {
+	width: 100%;
+	bottom: 0;
+	padding: 40px 0 20px;
+	text-align: center;
+	p {
+		margin-bottom: 40px;
+	}
+	img {
+		width: 104px;
+		margin-bottom: 100px;
+	}
+}
+
+.social {
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 40px;
+  color: #000;
+}
+
+.social a {
+  position: relative;
+  display: inline-block;
+  margin: 0 2px;
+  padding: 8px 16px 8px 42px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: .1px;
+  text-decoration: none;
+  color: black;
+  opacity: .95;
+  transition: opacity .2s linear;
+}
+
+.social a:hover { 
+  opacity: 1; 
+}
+
+.social .twitter:before {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  margin-top: -13px;
+  background-image: url("twitter.png");
+  content: "";
+}
+
+.social .facebook:before {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  margin-top: -13px;
+  background-image: url("facebook.png");
+  content: "";
+}
+
+.social .email:before {
+  position: absolute;
+  top: 50%;
+  left: 3px;
+  width: 26px;
+  height: 26px;
+  margin-top: -13px;
+  background-image: url("mail.png");
+  content: "";
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    
+    .social .twitter:before {
+      background-image: url("twitter@2x.png");
+      background-size: 26px 26px;
+    }
+
+    .social .facebook:before {
+      background-image: url("facebook@2x.png");
+      background-size: 26px 26px;
+    }
+
+    .social .email:before {
+      background-image: url("mail@2x.png");
+      background-size: 26px 26px;
+    }
+}
+
+a {
+	color: #fe620f;
+}

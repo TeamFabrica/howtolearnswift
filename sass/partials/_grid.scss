@@ -1,0 +1,75 @@
+/* Grid
+---------------------------------------- */
+.container {
+    position: relative;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.row {
+    width: 100%;
+    display: inline-block;
+    margin: 0px 30px 0px 30px;
+}
+ 
+.column {
+    float:  left;
+    margin: 0% 0.980392156863% 20px 0.980392156863%;
+}
+ 
+.one-column  {width:  6.372549019608%;}
+.two-column  {width: 14.705882352941%;}
+.three-column  {width: 23.039215686275%;}
+.four-column  {width: 31.372549019608%;}
+.five-column  {width: 39.705882352941%;}
+.six-column  {width: 48.039215686275%;}
+.seven-column  {width: 56.372549019608%;}
+.eight-column  {width: 64.705882352941%;}
+.nine-column  {width: 73.039215686275%;}
+.ten-column {width: 81.372549019608%;}
+.eleven-column {width: 89.705882352941%;}
+.twelve-column {width: 98.039215686275%;}
+.six-column-full {width:50%;}
+
+@media (max-width: 680px){
+    .six-column-full {
+        width: 100% !important;
+    }
+}
+@media (max-width: 768px) {
+    .one-column {
+        width: 98.039215686275%;
+    }
+
+    .two-column {
+        width: 98.039215686275%;
+    }
+
+    .three-column {
+        width: 98.039215686275%;
+    }
+
+    .four-column {
+        width: 98.039215686275%;
+    }
+
+    .five-column {
+        width: 98.039215686275%;
+    }
+
+    .six-column {
+        width: 98.039215686275%;
+    }
+
+    .seven-column {
+        width: 98.039215686275%;
+    }
+
+    .eight-column {
+        width: 98.039215686275%;
+    }
+
+    .container {
+        margin: 0 25px;
+    }
+}

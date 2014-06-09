@@ -1,0 +1,189 @@
+$white: #fff;
+
+/* Global
+---------------------------------------- */
+* {
+	-webkit-font-smoothing:antialiased;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-color: #fff;
+	color:#222222;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	a {
+	text-decoration: none;
+	}
+}
+
+::selection { 
+	color:$white;
+	background:#56c6fa
+}
+
+::-moz-selection {
+	color:$white;
+	background:#56c6fa
+}
+
+.wrapper {
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background-image: url('bg.png');
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	text-align: center;
+	text-rendering: optimizeLegibility;
+	height:700px;
+}
+
+section {
+	margin:85px 0;
+	img {
+		width:175px;
+		margin-bottom:40px;
+	}
+}
+
+.inner {
+	width: 600px;
+	margin: 0 auto;
+	margin-bottom: 80px;
+}
+
+@media (max-width: 768px) {
+    .inner {
+        width: 80%;
+    }
+}
+
+@media (max-width: 580px) {
+	.inner {
+		width: 95%;
+	}
+}
+
+.innercolumn {
+	width: 80%;
+	margin: 0 auto;
+	border-top: 1px solid rgba(182, 196, 209, 0.3);
+}
+
+form {
+  position: relative;
+  margin: 38px auto 0;
+  -webkit-animation-name: h1anim;
+  -moz-animation-name: h1anim;
+  -ms-animation-name: h1anim;
+  -o-animation-name: h1anim;
+  animation-name: h1anim;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-delay: 0.75s;
+  -moz-animation-delay: 0.75s;
+  -ms-animation-delay: 0.75s;
+  -o-animation-delay: 0.75s;
+  animation-delay: 0.75s;
+  -webkit-animation-duration: 0.75s;
+  -moz-animation-duration: 0.75s;
+  -ms-animation-duration: 0.75s;
+  -o-animation-duration: 0.75s;
+  animation-duration: 0.75s;
+}
+
+
+input[type="email"] {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: .1em;
+  display: inline-block;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 25px 30px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  width: 510px;
+  color: #000;
+  margin: 0 10px 20px 0;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: inline-block;
+  border-radius: 15px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  padding: 17px 18px;
+  border: 1px solid #ff9500;
+  width: 90px;
+  background: url("swift@2x.png") 50% 8px no-repeat;
+  background-color: #ff9500;
+  background-size: 35px 31px;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: -140px;
+  font-size: 16px;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+} 
+
+input[type="submit"]:hover {
+  background-color: #ff7621;
+  border: 1px solid #ff7621;
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  transition:all 0.5s ease-out;
+}
+
+@media screen and (max-width: 600px) {
+  input[type="email"] {
+    box-sizing: border-box;
+    width: 99% !important;
+    margin-bottom: 10px !important;
+    padding: 17px 0px 17px 18px;
+    margin: 10px 10px 0 0;
+  }
+
+  input[type="submit"] {
+    box-sizing: border-box;
+    width: 99% !important;
+    margin-bottom: 10px !important;
+    padding: 17px 0px 17px 0px;
+    margin: 10px 10px 0 0;
+  }
+}
+
+textarea:focus, input:focus {
+  border: 1px solid #09C;
+}
+
+.clear {
+	display: inline-block;
+}
+
+@media screen and (max-width:600px){
+	.clear{
+	width: 100%;
+	}
+
+	.wrapper {
+		height: 820px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.wrapper {
+		height: 900px
+	}
+}

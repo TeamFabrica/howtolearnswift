@@ -1,0 +1,21 @@
+/* Typography
+---------------------------------------- */
+h2 {
+	font-size:52px;
+	font-weight: 200;
+	line-height:52px;
+	margin-bottom:20px;
+	letter-spacing: .1em;
+	span {
+		@extend h2;
+		font-weight: 400;
+	}
+}
+
+p {
+	font-size: 20px;
+	letter-spacing: .1em;
+	line-height: 30px;
+	font-weight: 200;
+	text-align: center;
+}
