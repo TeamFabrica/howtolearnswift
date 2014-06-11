@@ -76,26 +76,6 @@ section {
 form {
   position: relative;
   margin: 38px auto 0;
-  -webkit-animation-name: h1anim;
-  -moz-animation-name: h1anim;
-  -ms-animation-name: h1anim;
-  -o-animation-name: h1anim;
-  animation-name: h1anim;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.75s;
-  -moz-animation-delay: 0.75s;
-  -ms-animation-delay: 0.75s;
-  -o-animation-delay: 0.75s;
-  animation-delay: 0.75s;
-  -webkit-animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
-  -ms-animation-duration: 0.75s;
-  -o-animation-duration: 0.75s;
-  animation-duration: 0.75s;
 }
 
 
@@ -116,26 +96,35 @@ input[type="email"] {
 }
 
 input[type="submit"] {
+  cursor: pointer;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  padding: 17px 18px;
+  padding: 21px 21px;
   border: 1px solid #ff9500;
   width: 90px;
-  background: url("swift@2x.png") 50% 8px no-repeat;
-  background-color: #ff9500;
-  background-size: 35px 31px;
+  background: url("button-1@2x.png") no-repeat center center;
+  background-size: 90px 59px;
   color: #fff;
   margin-top: 10px;
-  margin-left: -140px;
-  font-size: 16px;
+  margin-left: -142px;
+  font-size: 12px;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition:all 0.5s ease-out;
 } 
+
+.clear {
+  display: inline-block;
+}
+
+.clear:before {
+  background: url("swift@2x.png");
+  background-size: 35px 31px;
+}
 
 input[type="submit"]:hover {
   background-color: #ff7621;
@@ -146,7 +135,7 @@ input[type="submit"]:hover {
   transition:all 0.5s ease-out;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 640px) {
   input[type="email"] {
     box-sizing: border-box;
     width: 99% !important;
@@ -159,20 +148,30 @@ input[type="submit"]:hover {
     box-sizing: border-box;
     width: 99% !important;
     margin-bottom: 10px !important;
+    background: url("button-2@2x.png") no-repeat center center;
+    background-size: 584px 59px;
     padding: 17px 0px 17px 0px;
     margin: 10px 10px 0 0;
   }
 }
 
-textarea:focus, input:focus {
-  border: 1px solid #09C;
+textarea:focus, input:focus{
+    outline: 0;
 }
 
-.clear {
-	display: inline-block;
+@media screen and (max-width:700px){
+  .wrapper {
+    height: 750px;
+  }
 }
 
-@media screen and (max-width:600px){
+@media screen and (max-width:650px){
+  .wrapper {
+    height: 780px;
+  }
+}
+
+@media screen and (max-width:640px){
 	.clear{
 	width: 100%;
 	}
@@ -180,6 +179,12 @@ textarea:focus, input:focus {
 	.wrapper {
 		height: 820px;
 	}
+}
+
+@media screen and (max-width:540px){
+  .wrapper {
+    height: 870px;
+  }
 }
 
 @media screen and (max-width: 400px) {

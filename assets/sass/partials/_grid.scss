@@ -5,6 +5,11 @@
     max-width: 960px;
     margin-left: auto;
     margin-right: auto;
+    -webkit-animation: fadeIn 1s 0.5s ease forwards;
+    -moz-animation: fadeIn 1s 0.5s ease forwards;
+    -ms-animation: fadeIn 1s 0.5s ease forwards;
+    -o-animation: fadeIn 1s 0.5s ease forwards;
+    animation: fadeIn 1s 0.5s ease forwards;
 }
 .row {
     width: 100%;

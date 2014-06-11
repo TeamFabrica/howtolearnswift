@@ -12,18 +12,42 @@
 		<meta name="twitter:card" content="photo">
 		<meta name="twitter:site" content="@HowToLearnSwift">
 		<meta name="twitter:creator" content="@HowToLearnSwift">
-		<meta name="twitter:title" content="Learn Swift - A free Swift development newsletter. ">
+		<meta name="twitter:title" content="Learn Swift - A free Swift development newsletter. - http://howtolearnswift.com">
 		<meta name="twitter:domain" content="howtolearnswift.com">
 		<!-- TITLE -->
 		<title>Learn swift - A free Swift development newsletter.</title>
-		<link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.ico">
+		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 		<!-- STYLESHEETS -->
 		<link href="assets/style.css" type="text/css" rel="stylesheet">
+		<link href="assets/anim.css" type="text/css" rel="stylesheet">   
 		<!-- JQUERY -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    <script type="text/javascript">
+window.analytics=window.analytics||[],window.analytics.methods=["identify","group","track","page","pageview","alias","ready","on","once","off","trackLink","trackForm","trackClick","trackSubmit"],window.analytics.factory=function(t){return function(){var a=Array.prototype.slice.call(arguments);return a.unshift(t),window.analytics.push(a),window.analytics}};for(var i=0;i<window.analytics.methods.length;i++){var key=window.analytics.methods[i];window.analytics[key]=window.analytics.factory(key)}window.analytics.load=function(t){if(!document.getElementById("analytics-js")){var a=document.createElement("script");a.type="text/javascript",a.id="analytics-js",a.async=!0,a.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.io/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(a,n)}},window.analytics.SNIPPET_VERSION="2.0.9",
+window.analytics.load("syog0iayvf");
+window.analytics.page();
+    </script>
 	</head>
 	<body>
+		<div id="fb-root"></div>
+		<script>
+	      window.fbAsyncInit = function() {
+	        FB.init({
+	          appId      : 641465145943173,
+	          xfbml      : true,
+	          version    : 'v2.0'
+	        });
+	      };
+
+	      (function(d, s, id){
+	         var js, fjs = d.getElementsByTagName(s)[0];
+	         if (d.getElementById(id)) {return;}
+	         js = d.createElement(s); js.id = id;
+	         js.src = "//connect.facebook.net/en_US/sdk.js";
+	         fjs.parentNode.insertBefore(js, fjs);
+	       }(document, 'script', 'facebook-jssdk'));
+	    </script>
 		<div class="wrapper">
 			<div class="line"></div>
 			<section>
@@ -46,19 +70,21 @@
 			</section>
 		</div>
 		<footer>
-			<div class="socialmedia">
-				<div class="social">
-		          <a href="http://www.facebook.com/sharer/sharer.php?u=http://howtolearswift.com&title=LearnSwift – A free Swift development newsletter." class="facebook" target="_blank">Share</a>
-		          <a href="http://www.twitter.com/how tolearnswift" class="twitter" target="_blank">Follow</a>
-		          <a href="mailto:info@howtoswift.com" class="email">Email</a>
+			<div class="container">
+				<div class="socialmedia">
+					<ul class="social">
+						<li>
+				          <div class="fb-share-button" data-href="https://howtolearnswift.com" data-type="button_count"></div>
+				        </li>
+				        <li>
+				          <a href="https://twitter.com/share" class="twitter-share-button" data-url="https://howtolearnswift.com" data-via="howtolearnswift" data-size="76px 20px" style="margin-left: 10px;"data-lang="en">Tweet</a>
+				        </li>
+			        </ul>
 		        </div>
-	        </div>
-	        <div class="container">
 		        <p>howtolearnswift.com is handcrafted by <span><a href="http://www.fabrica.io">Fabrica.io</a></span></p>
 		        <img src="assets/fabrica@2x.png">
 		    </div>
 	    </footer>
 		<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 	</body>
-
 </html>

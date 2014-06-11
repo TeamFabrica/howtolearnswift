@@ -150,32 +150,11 @@ section img {
 form {
   position: relative;
   margin: 38px auto 0;
-  -webkit-animation-name: h1anim;
-  -moz-animation-name: h1anim;
-  -ms-animation-name: h1anim;
-  -o-animation-name: h1anim;
-  animation-name: h1anim;
-  -webkit-animation-fill-mode: both;
-  -moz-animation-fill-mode: both;
-  -ms-animation-fill-mode: both;
-  -o-animation-fill-mode: both;
-  animation-fill-mode: both;
-  -webkit-animation-delay: 0.75s;
-  -moz-animation-delay: 0.75s;
-  -ms-animation-delay: 0.75s;
-  -o-animation-delay: 0.75s;
-  animation-delay: 0.75s;
-  -webkit-animation-duration: 0.75s;
-  -moz-animation-duration: 0.75s;
-  -ms-animation-duration: 0.75s;
-  -o-animation-duration: 0.75s;
-  animation-duration: 0.75s;
 }
 
-/* line 102, ../sass/partials/_global.scss */
+/* line 82, ../sass/partials/_global.scss */
 input[type="email"] {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  letter-spacing: .1em;
   display: inline-block;
   border-radius: 15px;
   -moz-border-radius: 15px;
@@ -189,30 +168,41 @@ input[type="email"] {
   font-size: 20px;
 }
 
-/* line 118, ../sass/partials/_global.scss */
+/* line 98, ../sass/partials/_global.scss */
 input[type="submit"] {
+  cursor: pointer;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   display: inline-block;
   border-radius: 15px;
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
-  padding: 17px 18px;
+  padding: 21px 21px;
   border: 1px solid #ff9500;
   width: 90px;
-  background: url("swift@2x.png") 50% 8px no-repeat;
-  background-color: #ff9500;
-  background-size: 35px 31px;
+  background: url("button-1@2x.png") no-repeat center center;
+  background-size: 90px 59px;
   color: #fff;
   margin-top: 10px;
-  margin-left: -140px;
-  font-size: 16px;
+  margin-left: -142px;
+  font-size: 12px;
   -webkit-transition: all 0.5s ease-out;
   -moz-transition: all 0.5s ease-out;
   -o-transition: all 0.5s ease-out;
   transition: all 0.5s ease-out;
 }
 
-/* line 140, ../sass/partials/_global.scss */
+/* line 120, ../sass/partials/_global.scss */
+.clear {
+  display: inline-block;
+}
+
+/* line 124, ../sass/partials/_global.scss */
+.clear:before {
+  background: url("swift@2x.png");
+  background-size: 35px 31px;
+}
+
+/* line 129, ../sass/partials/_global.scss */
 input[type="submit"]:hover {
   background-color: #ff7621;
   border: 1px solid #ff7621;
@@ -222,8 +212,8 @@ input[type="submit"]:hover {
   transition: all 0.5s ease-out;
 }
 
-@media screen and (max-width: 600px) {
-  /* line 150, ../sass/partials/_global.scss */
+@media screen and (max-width: 640px) {
+  /* line 139, ../sass/partials/_global.scss */
   input[type="email"] {
     box-sizing: border-box;
     width: 99% !important;
@@ -232,38 +222,53 @@ input[type="submit"]:hover {
     margin: 10px 10px 0 0;
   }
 
-  /* line 158, ../sass/partials/_global.scss */
+  /* line 147, ../sass/partials/_global.scss */
   input[type="submit"] {
     box-sizing: border-box;
     width: 99% !important;
     margin-bottom: 10px !important;
+    background: url("button-2@2x.png") no-repeat center center;
+    background-size: 584px 59px;
     padding: 17px 0px 17px 0px;
     margin: 10px 10px 0 0;
   }
 }
-/* line 167, ../sass/partials/_global.scss */
+/* line 158, ../sass/partials/_global.scss */
 textarea:focus, input:focus {
-  border: 1px solid #09C;
+  outline: 0;
 }
 
-/* line 171, ../sass/partials/_global.scss */
-.clear {
-  display: inline-block;
+@media screen and (max-width: 700px) {
+  /* line 163, ../sass/partials/_global.scss */
+  .wrapper {
+    height: 750px;
+  }
 }
-
-@media screen and (max-width: 600px) {
-  /* line 176, ../sass/partials/_global.scss */
+@media screen and (max-width: 650px) {
+  /* line 169, ../sass/partials/_global.scss */
+  .wrapper {
+    height: 780px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 175, ../sass/partials/_global.scss */
   .clear {
     width: 100%;
   }
 
-  /* line 180, ../sass/partials/_global.scss */
+  /* line 179, ../sass/partials/_global.scss */
   .wrapper {
     height: 820px;
   }
 }
+@media screen and (max-width: 540px) {
+  /* line 185, ../sass/partials/_global.scss */
+  .wrapper {
+    height: 870px;
+  }
+}
 @media screen and (max-width: 400px) {
-  /* line 186, ../sass/partials/_global.scss */
+  /* line 191, ../sass/partials/_global.scss */
   .wrapper {
     height: 900px;
   }
@@ -276,134 +281,139 @@ textarea:focus, input:focus {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
+  -webkit-animation: fadeIn 1s 0.5s ease forwards;
+  -moz-animation: fadeIn 1s 0.5s ease forwards;
+  -ms-animation: fadeIn 1s 0.5s ease forwards;
+  -o-animation: fadeIn 1s 0.5s ease forwards;
+  animation: fadeIn 1s 0.5s ease forwards;
 }
 
-/* line 9, ../sass/partials/_grid.scss */
+/* line 14, ../sass/partials/_grid.scss */
 .row {
   width: 100%;
   display: inline-block;
   margin: 0px 30px 0px 30px;
 }
 
-/* line 15, ../sass/partials/_grid.scss */
+/* line 20, ../sass/partials/_grid.scss */
 .column {
   float: left;
   margin: 0% 0.980392156863% 20px 0.980392156863%;
 }
 
-/* line 20, ../sass/partials/_grid.scss */
+/* line 25, ../sass/partials/_grid.scss */
 .one-column {
   width: 6.372549019608%;
 }
 
-/* line 21, ../sass/partials/_grid.scss */
+/* line 26, ../sass/partials/_grid.scss */
 .two-column {
   width: 14.705882352941%;
 }
 
-/* line 22, ../sass/partials/_grid.scss */
+/* line 27, ../sass/partials/_grid.scss */
 .three-column {
   width: 23.039215686275%;
 }
 
-/* line 23, ../sass/partials/_grid.scss */
+/* line 28, ../sass/partials/_grid.scss */
 .four-column {
   width: 31.372549019608%;
 }
 
-/* line 24, ../sass/partials/_grid.scss */
+/* line 29, ../sass/partials/_grid.scss */
 .five-column {
   width: 39.705882352941%;
 }
 
-/* line 25, ../sass/partials/_grid.scss */
+/* line 30, ../sass/partials/_grid.scss */
 .six-column {
   width: 48.039215686275%;
 }
 
-/* line 26, ../sass/partials/_grid.scss */
+/* line 31, ../sass/partials/_grid.scss */
 .seven-column {
   width: 56.372549019608%;
 }
 
-/* line 27, ../sass/partials/_grid.scss */
+/* line 32, ../sass/partials/_grid.scss */
 .eight-column {
   width: 64.705882352941%;
 }
 
-/* line 28, ../sass/partials/_grid.scss */
+/* line 33, ../sass/partials/_grid.scss */
 .nine-column {
   width: 73.039215686275%;
 }
 
-/* line 29, ../sass/partials/_grid.scss */
+/* line 34, ../sass/partials/_grid.scss */
 .ten-column {
   width: 81.372549019608%;
 }
 
-/* line 30, ../sass/partials/_grid.scss */
+/* line 35, ../sass/partials/_grid.scss */
 .eleven-column {
   width: 89.705882352941%;
 }
 
-/* line 31, ../sass/partials/_grid.scss */
+/* line 36, ../sass/partials/_grid.scss */
 .twelve-column {
   width: 98.039215686275%;
 }
 
-/* line 32, ../sass/partials/_grid.scss */
+/* line 37, ../sass/partials/_grid.scss */
 .six-column-full {
   width: 50%;
 }
 
 @media (max-width: 680px) {
-  /* line 35, ../sass/partials/_grid.scss */
+  /* line 40, ../sass/partials/_grid.scss */
   .six-column-full {
     width: 100% !important;
   }
 }
 @media (max-width: 768px) {
-  /* line 40, ../sass/partials/_grid.scss */
+  /* line 45, ../sass/partials/_grid.scss */
   .one-column {
     width: 98.039215686275%;
   }
 
-  /* line 44, ../sass/partials/_grid.scss */
+  /* line 49, ../sass/partials/_grid.scss */
   .two-column {
     width: 98.039215686275%;
   }
 
-  /* line 48, ../sass/partials/_grid.scss */
+  /* line 53, ../sass/partials/_grid.scss */
   .three-column {
     width: 98.039215686275%;
   }
 
-  /* line 52, ../sass/partials/_grid.scss */
+  /* line 57, ../sass/partials/_grid.scss */
   .four-column {
     width: 98.039215686275%;
   }
 
-  /* line 56, ../sass/partials/_grid.scss */
+  /* line 61, ../sass/partials/_grid.scss */
   .five-column {
     width: 98.039215686275%;
   }
 
-  /* line 60, ../sass/partials/_grid.scss */
+  /* line 65, ../sass/partials/_grid.scss */
   .six-column {
     width: 98.039215686275%;
   }
 
-  /* line 64, ../sass/partials/_grid.scss */
+  /* line 69, ../sass/partials/_grid.scss */
   .seven-column {
     width: 98.039215686275%;
   }
 
-  /* line 68, ../sass/partials/_grid.scss */
+  /* line 73, ../sass/partials/_grid.scss */
   .eight-column {
     width: 98.039215686275%;
   }
 
-  /* line 72, ../sass/partials/_grid.scss */
+  /* line 77, ../sass/partials/_grid.scss */
   .container {
     margin: 0 25px;
   }
@@ -416,7 +426,6 @@ h2, h2 span {
   font-weight: 200;
   line-height: 52px;
   margin-bottom: 20px;
-  letter-spacing: .1em;
 }
 /* line 9, ../sass/partials/_typography.scss */
 h2 span {
@@ -485,8 +494,15 @@ footer img {
   margin-bottom: 40px;
   color: #000;
 }
+/* line 22, ../sass/modules/_footer.scss */
+.social ul {
+  display: inline-block;
+  width: 96px;
+  padding: 3px;
+  height: 20px;
+}
 
-/* line 24, ../sass/modules/_footer.scss */
+/* line 30, ../sass/modules/_footer.scss */
 .social a {
   position: relative;
   display: inline-block;
@@ -501,12 +517,12 @@ footer img {
   transition: opacity .2s linear;
 }
 
-/* line 38, ../sass/modules/_footer.scss */
+/* line 44, ../sass/modules/_footer.scss */
 .social a:hover {
   opacity: 1;
 }
 
-/* line 42, ../sass/modules/_footer.scss */
+/* line 48, ../sass/modules/_footer.scss */
 .social .twitter:before {
   position: absolute;
   top: 50%;
@@ -518,7 +534,7 @@ footer img {
   content: "";
 }
 
-/* line 53, ../sass/modules/_footer.scss */
+/* line 59, ../sass/modules/_footer.scss */
 .social .facebook:before {
   position: absolute;
   top: 50%;
@@ -530,7 +546,7 @@ footer img {
   content: "";
 }
 
-/* line 64, ../sass/modules/_footer.scss */
+/* line 70, ../sass/modules/_footer.scss */
 .social .email:before {
   position: absolute;
   top: 50%;
@@ -543,25 +559,25 @@ footer img {
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  /* line 77, ../sass/modules/_footer.scss */
+  /* line 83, ../sass/modules/_footer.scss */
   .social .twitter:before {
     background-image: url("twitter@2x.png");
     background-size: 26px 26px;
   }
 
-  /* line 82, ../sass/modules/_footer.scss */
+  /* line 88, ../sass/modules/_footer.scss */
   .social .facebook:before {
     background-image: url("facebook@2x.png");
     background-size: 26px 26px;
   }
 
-  /* line 87, ../sass/modules/_footer.scss */
+  /* line 93, ../sass/modules/_footer.scss */
   .social .email:before {
     background-image: url("mail@2x.png");
     background-size: 26px 26px;
   }
 }
-/* line 93, ../sass/modules/_footer.scss */
+/* line 99, ../sass/modules/_footer.scss */
 a {
   color: #fe620f;
 }
