@@ -412,10 +412,16 @@ footer {
 }
 footer p {
   margin-bottom: 40px;
+  color: #8e8e8e;
+  letter-spacing: 0;
 }
 footer img {
-  width: 104px;
   margin-bottom: 100px;
+  height: 30px;
+}
+footer a {
+  color: #656565;
+  font-weight: bold;
 }
 
 .social {
@@ -430,7 +436,10 @@ footer img {
   padding: 3px;
   height: 20px;
 }
-
+.social li {
+  display: inline-block;
+  padding: 10px 3% 0;
+}
 .social a {
   position: relative;
   display: inline-block;
